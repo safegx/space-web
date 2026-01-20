@@ -1,0 +1,85 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .video {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 80%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: 80% center;
+            z-index: 0;
+        }
+
+        body nav {
+            display: flex;
+
+            z-index: 2;
+        }
+
+        main {
+            background-color: #030909;
+            color: white;
+            text-align: center;
+            margin-left: 50%;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+        .menu{
+            color: white;
+        }
+
+        .eslogan {
+            font-size: 30px;
+            font-family: "Major Mono Display";
+        }
+
+        .improve {
+            color: rgb(255, 255, 146);
+            text-shadow: 0px 0px 35px yellow;
+            font-weight: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop class="video">
+        <source src="SpaceStation1.mp4" type="video/mp4">
+    </video>
+
+    <main>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="ourWork.html">Our work</a>
+        </nav>
+        <div class="eslogan">
+            <p class="frase">Making humanity </p>
+            <p class="improve">reach</p>
+            <p class="frase"> the future</p>
+        </div>
+    </main>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+</body>
